@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Branch</OriginalElement>
+  <nodes>
+    <node x="0.0" y="243.0">Branch</node>
+    <node x="48.4354166666667" y="0.0">Node</node>
+    <node x="213.0" y="301.0">Leaf</node>
+    <node x="56.750000000000014" y="509.0">Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Branch" target="Node">
+      <point x="1.4210854715202004E-14" y="-108.0" />
+      <point x="96.50000000000001" y="218.0" />
+      <point x="117.7354166666667" y="218.0" />
+      <point x="-46.2" y="96.5" />
+    </edge>
+    <edge source="Leaf" target="Node">
+      <point x="33.25" y="-50.0" />
+      <point x="312.75" y="218.0" />
+      <point x="256.3354166666667" y="218.0" />
+      <point x="92.39999999999998" y="96.5" />
+    </edge>
+    <edge source="Client" target="Leaf">
+      <point x="58.66666666666666" y="-26.5" />
+      <point x="203.41666666666669" y="484.0" />
+      <point x="279.5" y="484.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="Client" target="Branch">
+      <point x="0.0" y="-26.5" />
+      <point x="48.25" y="108.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="333.28571428571445" y="478.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

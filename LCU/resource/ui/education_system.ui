@@ -1,0 +1,5838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>972</width>
+    <height>868</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>聊城大学教务系统</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>571</width>
+       <height>641</height>
+      </size>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabBar::tab{width:125}
+QTabBar::tab{height:32}</string>
+     </property>
+     <property name="currentIndex">
+      <number>4</number>
+     </property>
+     <widget class="QWidget" name="Homepage">
+      <attribute name="title">
+       <string>个人主页</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>921</width>
+         <height>621</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>基本信息</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+       <widget class="QLabel" name="Img_lab">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>30</y>
+          <width>171</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="info_ted">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>711</width>
+          <height>581</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>680</y>
+         <width>921</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 164, 73);</string>
+       </property>
+       <property name="title">
+        <string>个人培养方案</string>
+       </property>
+       <widget class="QPushButton" name="plan_btn">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>93</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>921</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 164, 73);</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>0</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(8, 8, 8);</string>
+        </property>
+        <property name="text">
+         <string>学籍信息</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="change_btn">
+        <property name="geometry">
+         <rect>
+          <x>840</x>
+          <y>20</y>
+          <width>81</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>修改</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Course">
+      <attribute name="title">
+       <string>选课管理</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>931</width>
+         <height>791</height>
+        </rect>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::TabFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTabBar::tab{width:170}
+QTabBar::tab{height:28}
+color: rgb(255, 222, 167);
+
+</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::South</enum>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Rounded</enum>
+       </property>
+       <property name="currentIndex">
+        <number>4</number>
+       </property>
+       <property name="elideMode">
+        <enum>Qt::ElideNone</enum>
+       </property>
+       <property name="documentMode">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="Elective_course">
+        <attribute name="title">
+         <string>网上选课</string>
+        </attribute>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>901</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 241, 162);
+color: rgb(255, 56, 42);
+border-width: 1px;border-style: solid;
+border-color: rgb(18, 18, 18);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>901</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>提示：</string>
+         </property>
+        </widget>
+        <widget class="Line" name="line">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>120</y>
+           <width>921</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-color: rgb(30, 150, 255);</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QStackedWidget" name="stackedWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>160</y>
+           <width>781</width>
+           <height>571</height>
+          </rect>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="Planning_course_Page">
+          <widget class="QTableView" name="Planning_course_view">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>751</width>
+             <height>511</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+           </property>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="geometry">
+            <rect>
+             <x>570</x>
+             <y>540</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>确定</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="geometry">
+            <rect>
+             <x>670</x>
+             <y>540</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>取消</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="Program_course_Page">
+          <widget class="QTableView" name="Program_course_view">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>751</width>
+             <height>491</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+           </property>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+          <widget class="QLabel" name="label_56">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>10</y>
+             <width>111</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>计划学年学期</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>10</y>
+             <width>181</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2018-2019学年第一学期(两学期)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2018-2019学年第二学期(两学期)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2019-2020学年第一学期(两学期)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2019-2020学年第二学期(两学期)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2020-2021学年第一学期(两学期)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2020-2021学年第二学期(两学期)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2021-2022学年第一学期(两学期)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2021-2022学年第二学期(两学期)</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="comboBox_2">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>10</y>
+             <width>91</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>限选</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>必修</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>选修</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>任选</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>辅修</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_57">
+           <property name="geometry">
+            <rect>
+             <x>520</x>
+             <y>10</y>
+             <width>71</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>课程属性</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_9">
+           <property name="geometry">
+            <rect>
+             <x>700</x>
+             <y>10</y>
+             <width>61</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>搜索</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_10">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>540</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>确认</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_11">
+           <property name="geometry">
+            <rect>
+             <x>670</x>
+             <y>540</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>取消</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="Elective_course_Page">
+          <widget class="QTableView" name="Elective_course_view">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>751</width>
+             <height>501</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+           </property>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+          <widget class="QPushButton" name="pushButton_12">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>530</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>确认</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_13">
+           <property name="geometry">
+            <rect>
+             <x>680</x>
+             <y>530</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>取消</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="School_elective_course_Page">
+          <widget class="QTableView" name="School_elective_course_view">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>751</width>
+             <height>501</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+           </property>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+          <widget class="QPushButton" name="pushButton_14">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>530</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>确认</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_15">
+           <property name="geometry">
+            <rect>
+             <x>680</x>
+             <y>530</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>取消</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="free_choice_course_Page">
+          <widget class="QTableView" name="free_choice_course_view">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>150</y>
+             <width>751</width>
+             <height>371</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+           </property>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+          <widget class="QLabel" name="label_58">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>课程号:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_59">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>课序号:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_60">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>80</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>课程名:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_61">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>110</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>教师:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_62">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>20</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>开课系:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_63">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>50</y>
+             <width>71</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>上课星期:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_64">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>80</y>
+             <width>72</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>上课节次:</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>181</width>
+             <height>21</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_2">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>50</y>
+             <width>181</width>
+             <height>21</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_3">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>80</y>
+             <width>181</width>
+             <height>21</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_4">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>110</y>
+             <width>181</width>
+             <height>21</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_5">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>20</y>
+             <width>181</width>
+             <height>21</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_3">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>50</y>
+             <width>151</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_4">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>80</y>
+             <width>151</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_16">
+           <property name="geometry">
+            <rect>
+             <x>370</x>
+             <y>110</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>确定</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_17">
+           <property name="geometry">
+            <rect>
+             <x>680</x>
+             <y>530</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>取消</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_18">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>530</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>确认</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="Rehearsal_course_Page">
+          <widget class="QTableView" name="Rehearsal_course_view">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>751</width>
+             <height>501</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+           </property>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+          <widget class="QPushButton" name="pushButton_19">
+           <property name="geometry">
+            <rect>
+             <x>670</x>
+             <y>530</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>取消</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_20">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>530</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>确认</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>4</x>
+           <y>160</y>
+           <width>111</width>
+           <height>571</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="Planning_course_btn">
+            <property name="text">
+             <string>计划课程</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Program_course_btn">
+            <property name="text">
+             <string>方案课程</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Elective_course_btn">
+            <property name="text">
+             <string>系任选课</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="School_elective_course_btn">
+            <property name="text">
+             <string>校任选课</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="free_choice_course_btn">
+            <property name="text">
+             <string>自由选择</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Rehearsal_course_btn">
+            <property name="text">
+             <string>重修课程</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Elective_course_res">
+        <attribute name="title">
+         <string>选课结果</string>
+        </attribute>
+        <widget class="QTableView" name="details_view_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>440</y>
+           <width>921</width>
+           <height>311</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QTableView" name="course_view_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>30</y>
+           <width>921</width>
+           <height>411</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="course_res_lab">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>191</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>选课结果(已安排时间地点)</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="timer_lab">
+         <property name="geometry">
+          <rect>
+           <x>660</x>
+           <y>0</y>
+           <width>271</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Withdrawal">
+        <attribute name="title">
+         <string>退课</string>
+        </attribute>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>901</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 241, 162);
+color: rgb(255, 56, 42);
+border-width: 1px;border-style: solid;
+border-color: rgb(18, 18, 18);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>901</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>提示：</string>
+         </property>
+        </widget>
+        <widget class="Line" name="line_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>120</y>
+           <width>921</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-color: rgb(30, 150, 255);</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QTableView" name="drop_course_view">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>160</y>
+           <width>921</width>
+           <height>581</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Invalid_Elective">
+        <attribute name="title">
+         <string>无效的选课结果</string>
+        </attribute>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>901</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 241, 162);
+color: rgb(255, 56, 42);
+border-width: 1px;border-style: solid;
+border-color: rgb(18, 18, 18);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>901</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>提示：</string>
+         </property>
+        </widget>
+        <widget class="Line" name="line_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>120</y>
+           <width>921</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-color: rgb(30, 150, 255);</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QTableView" name="null_course_res_view">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>901</width>
+           <height>581</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Class_Schedule">
+        <attribute name="title">
+         <string>本学期课表</string>
+        </attribute>
+        <widget class="QTableView" name="course_view">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>30</y>
+           <width>921</width>
+           <height>411</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="lineWidth">
+          <number>2</number>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QTableView" name="details_view">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>440</y>
+           <width>921</width>
+           <height>311</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="timer_lab_2">
+         <property name="geometry">
+          <rect>
+           <x>660</x>
+           <y>0</y>
+           <width>271</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="course_res_lab_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>191</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>选课结果(已安排时间地点)</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="assess">
+      <attribute name="title">
+       <string>教学评估</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>921</width>
+         <height>791</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTabBar::tab{width:184}
+QTabBar::tab{height:30}</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::South</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="evaluate_post_wid">
+        <attribute name="title">
+         <string>评估公告</string>
+        </attribute>
+        <widget class="QLabel" name="post_lab">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>401</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 30, 10);</string>
+         </property>
+         <property name="text">
+          <string>暂时没公告</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="teaching_evaluate_wid">
+        <attribute name="title">
+         <string>教学评估</string>
+        </attribute>
+        <widget class="QLabel" name="teaching_lab">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>401</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 30, 10);</string>
+         </property>
+         <property name="text">
+          <string>非教学评估时期，或评估时间已过。</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="graduate_evaluate_wid">
+        <attribute name="title">
+         <string>毕业生评估</string>
+        </attribute>
+        <widget class="QLabel" name="graduate_evaluate_lab">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>401</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 30, 10);</string>
+         </property>
+         <property name="text">
+          <string>现在不能进行评估</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Resource">
+      <attribute name="title">
+       <string>教学资源</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>951</width>
+         <height>801</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTabBar::tab{width:220}</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::South</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="elideMode">
+        <enum>Qt::ElideNone</enum>
+       </property>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>教室课表</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_12">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>911</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="title">
+          <string>列表</string>
+         </property>
+         <widget class="QLabel" name="label_31">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>学年学期:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="classroom_Academic_term_cob">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>40</y>
+            <width>261</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_32">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>70</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>校区:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="classroom_Campus_cob">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>80</y>
+            <width>241</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_33">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>教学楼:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="classroom_Teaching_building_cob">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>120</y>
+            <width>241</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_34">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>110</y>
+            <width>51</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>教室:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="classroom_class_cob">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>120</y>
+            <width>241</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="classroom_query_btn">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>150</y>
+            <width>81</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>查询</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="classroom_firstpage_btn">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>720</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>首页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="classroom_endpage_btn">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>720</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>末页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Previous_btn_2">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>上一页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="classroom_next_btn">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>下一页</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_35">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>720</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>每页记录数:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="classroom_course_info_lab">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>720</y>
+           <width>161</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>共0项  第1/0页</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="classroom_page_led">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>720</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="classroom_determine_btn">
+         <property name="geometry">
+          <rect>
+           <x>860</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>确定</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="classroom_page_cob">
+         <property name="geometry">
+          <rect>
+           <x>730</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>10项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>20项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>30项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>40项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>50项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>300项</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QTableView" name="classroom_view">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>190</y>
+           <width>911</width>
+           <height>521</height>
+          </rect>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>教师课表</string>
+        </attribute>
+        <widget class="QLineEdit" name="teach_page_led">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>720</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="teach_firstpage_btn">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>720</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>首页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="teach_endpage_btn">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>720</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>末页</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_36">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>720</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>每页记录数:</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="teach_next_btn">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>下一页</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="teach_page_cob">
+         <property name="geometry">
+          <rect>
+           <x>730</x>
+           <y>720</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>10项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>20项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>30项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>40项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>50项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>300项</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="teach_course_info_lab">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>720</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>共0项  第1/0页</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_13">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>2</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>列表</string>
+         </property>
+         <widget class="QLabel" name="label_37">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>学年学期:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="teach_Academic_term_cob">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>40</y>
+            <width>231</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_38">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>30</y>
+            <width>61</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>院系:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="teach_Department_cob">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>40</y>
+            <width>161</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_40">
+          <property name="geometry">
+           <rect>
+            <x>540</x>
+            <y>30</y>
+            <width>71</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>教师名:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teach_name_led">
+          <property name="geometry">
+           <rect>
+            <x>610</x>
+            <y>40</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_39">
+          <property name="geometry">
+           <rect>
+            <x>740</x>
+            <y>40</y>
+            <width>171</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Adobe Devanagari</family>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>提示：输入框支持模糊查询</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="teach_query_btn">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>70</y>
+            <width>81</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>查询</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="teach_Previous_btn">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>上一页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="teach_determine_btn">
+         <property name="geometry">
+          <rect>
+           <x>860</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>确定</string>
+         </property>
+        </widget>
+        <widget class="QTableView" name="teach_view">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>911</width>
+           <height>591</height>
+          </rect>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>班级课表</string>
+        </attribute>
+        <widget class="QPushButton" name="Class_firstpage_btn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>720</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>首页</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Class_course_info_lab">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>720</y>
+           <width>161</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>共0项  第1/0页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Class_next_btn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>下一页</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_14">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>2</y>
+           <width>911</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>列表</string>
+         </property>
+         <widget class="QLabel" name="label_41">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>学年学期:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="Class_Academic_term_cob">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>40</y>
+            <width>261</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_42">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>70</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>院系:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="Class_Department_cob">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>80</y>
+            <width>241</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_43">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>年级:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="Class_grade_cob">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>120</y>
+            <width>241</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_44">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>110</y>
+            <width>61</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>班级:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="Class_class_cob">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>120</y>
+            <width>241</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>请选择</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLabel" name="label_46">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>70</y>
+            <width>61</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>专业:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="Class_profession_cob">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>80</y>
+            <width>241</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>请选择</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QPushButton" name="Class_query_btn">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>150</y>
+            <width>81</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>查询</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="Class_Previous_btn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>上一页</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_45">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>720</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>每页记录数:</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Class_determine_btn">
+         <property name="geometry">
+          <rect>
+           <x>860</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>确定</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="Class_page_cob">
+         <property name="geometry">
+          <rect>
+           <x>730</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>10项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>20项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>30项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>40项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>50项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>300项</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QPushButton" name="Class_endpage_btn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>720</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>末页</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="Class_page_led">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>720</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QTableView" name="Class_view">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>190</y>
+           <width>911</width>
+           <height>521</height>
+          </rect>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>课程课表</string>
+        </attribute>
+        <widget class="QLineEdit" name="curriculum_page_led">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>720</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="curriculum_firstpage_btn">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>720</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>首页</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_15">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>2</y>
+           <width>911</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>列表</string>
+         </property>
+         <widget class="QLabel" name="label_47">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>学年学期:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="curriculum_Academic_term_cob">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>40</y>
+            <width>261</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_48">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>70</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>课程名:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_49">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>81</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>课程号:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_50">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>110</y>
+            <width>71</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>课序号:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_51">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>70</y>
+            <width>91</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>开课系所:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="curriculum_Department_cob">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>80</y>
+            <width>241</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="curriculum_query_btn">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>150</y>
+            <width>81</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>查询</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="curriculum_course_name_led">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>80</y>
+            <width>201</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="curriculum_course_num_led">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>120</y>
+            <width>201</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="curriculum_curse_order_led">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>120</y>
+            <width>201</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="curriculum_endpage_btn">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>720</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>末页</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="curriculum_course_info_lab">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>720</y>
+           <width>161</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>共0项  第1/0页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="curriculum_determine_btn">
+         <property name="geometry">
+          <rect>
+           <x>860</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>确定</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="curriculum_next_btn">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>下一页</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="curriculum_page_cob">
+         <property name="geometry">
+          <rect>
+           <x>730</x>
+           <y>720</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>10项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>20项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>30项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>40项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>50项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>300项</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QPushButton" name="curriculum_Previous_btn">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>上一页</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_52">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>720</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>每页记录数:</string>
+         </property>
+        </widget>
+        <widget class="QTableView" name="curriculum_view">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>190</y>
+           <width>911</width>
+           <height>521</height>
+          </rect>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="query">
+      <attribute name="title">
+       <string>综合查询</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>941</width>
+         <height>801</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QTabBar::tab{height:25}
+QTabBar::tab{width:134}</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::South</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="all_poss_grade_wid">
+        <attribute name="title">
+         <string>全部及格成绩</string>
+        </attribute>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>931</width>
+           <height>761</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+          <item>
+           <widget class="QListWidget" name="scool_year_lwid">
+            <property name="minimumSize">
+             <size>
+              <width>230</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>230</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectItems</enum>
+            </property>
+            <property name="currentRow">
+             <number>-1</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>全部学期的及格成绩</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="all_passgarade_wid">
+             <widget class="QLabel" name="garde_timer_lab">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>10</y>
+                <width>691</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>方正粗黑宋简体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="QTableView" name="allgarde_vie">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>671</width>
+                <height>711</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+              </property>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="property_grade_wid">
+        <attribute name="title">
+         <string>课程属性成绩</string>
+        </attribute>
+        <widget class="QLabel" name="Compulsory_label">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>931</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Yu Gothic UI Semibold</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>必修</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QTableView" name="Compulsory_view">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>931</width>
+           <height>351</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}
+gridline-color: rgb(170, 255, 255);</string>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QTableView" name="Elective_view">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>430</y>
+           <width>931</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>400</y>
+           <width>931</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Yu Gothic UI Semibold</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>选修</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>550</y>
+           <width>931</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Yu Gothic UI Semibold</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>任选</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QTableView" name="Pick_view">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>580</y>
+           <width>931</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="Compulsory_info_lab">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>369</y>
+           <width>931</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 207, 164);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Elective_info_lab">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>520</y>
+           <width>931</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(167, 167, 167);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Pick_info_lab">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>735</y>
+           <width>931</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(167, 167, 167);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="Line" name="line_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>542</y>
+           <width>941</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_7">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>390</y>
+           <width>941</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="plan_grade_wid">
+        <attribute name="title">
+         <string>方案成绩</string>
+        </attribute>
+        <widget class="QLabel" name="title_label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>921</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(12, 150, 255);</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <widget class="QTableView" name="plan_score_view">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>921</width>
+           <height>591</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}
+gridline-color: rgb(170, 255, 255);</string>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QGroupBox" name="plan_groupBox">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>670</y>
+           <width>921</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 170, 127);</string>
+         </property>
+         <property name="title">
+          <string>GroupBox</string>
+         </property>
+         <widget class="QLabel" name="plan_info_lab">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>901</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="plan_score_info_lab">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>650</y>
+           <width>921</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>新宋体</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="noposs_grade_wid">
+        <attribute name="title">
+         <string>不及格成绩</string>
+        </attribute>
+        <widget class="QLabel" name="label_29">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 36, 16);</string>
+         </property>
+         <property name="text">
+          <string>尚不及格</string>
+         </property>
+        </widget>
+        <widget class="QTableView" name="now_nopass_viw">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>911</width>
+           <height>231</height>
+          </rect>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QTableView" name="old_nopass_viw">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>430</y>
+           <width>911</width>
+           <height>231</height>
+          </rect>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_30">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>390</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>曾不及格</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="now_nopass_lab">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>290</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 225, 216);</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="old_nopass_lab">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>670</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width: 1px;border-style: solid;
+border-color: rgb(255, 225, 216);</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="semester_grade_wid">
+        <attribute name="title">
+         <string>本学期成绩</string>
+        </attribute>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-width: 1px;border-style: solid;border-color: rgb(7, 31, 255);
+</string>
+         </property>
+         <property name="text">
+          <string>本学期成绩查询列表</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QTableView" name="this_semester_view">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>911</width>
+           <height>701</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView QTableCornerButton::section {
+    color: white;/*文字颜色*/
+    background-color: rgb(41, 139, 201);/*背景色*/
+    border: 5px solid #418bc9;/*边框*/
+    border-radius:0px;/*边框圆角*/
+    border-color: rgb(41, 139, 201);/*边框颜色*/
+    font: 10px;/*字体大小*/
+    padding:0px 0 0 0px;/*内边距*/
+ }
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+    background-color: rgb(41, 139, 201);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: white;
+    background-color:rgb(41, 139, 201);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:rgb(41, 139, 201);
+}</string>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="course_layout_wid">
+        <attribute name="title">
+         <string>本学期课程安排</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_11">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>911</width>
+           <height>211</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>课程查询</string>
+         </property>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>20</y>
+            <width>71</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>课程号:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="course_number_led">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>20</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="course_name2_led">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>20</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>20</y>
+            <width>71</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>课程名:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="teach_led">
+          <property name="geometry">
+           <rect>
+            <x>590</x>
+            <y>20</y>
+            <width>181</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>540</x>
+            <y>20</y>
+            <width>51</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>教师:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>50</y>
+            <width>72</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>开课系所:</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="Department2_cob">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>50</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="week_cob">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>50</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>50</y>
+            <width>72</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>上课星期:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>541</x>
+            <y>50</y>
+            <width>81</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>上课节次:</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="class_num_cob">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>50</y>
+            <width>141</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="Campus_cob">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>80</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>东校区</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>西校区</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>80</y>
+            <width>72</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>校区:</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_5">
+          <property name="geometry">
+           <rect>
+            <x>480</x>
+            <y>80</y>
+            <width>31</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>80</y>
+            <width>71</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>教学楼:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_25">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>80</y>
+            <width>41</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>教室:</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_6">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>80</y>
+            <width>31</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_26">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>80</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>每页显示的记录数:</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="page_number_cob">
+          <property name="geometry">
+           <rect>
+            <x>650</x>
+            <y>80</y>
+            <width>121</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>20项</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>30项</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>40项</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>50项</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLabel" name="label_27">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>130</y>
+            <width>121</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>选择要显示的列:</string>
+          </property>
+         </widget>
+         <widget class="QListWidget" name="show_item_list_widget">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>110</y>
+            <width>91</width>
+            <height>91</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton">
+          <property name="geometry">
+           <rect>
+            <x>560</x>
+            <y>130</y>
+            <width>81</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>查询</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QTableView" name="tableView">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>220</y>
+           <width>911</width>
+           <height>501</height>
+          </rect>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="course_info2_lab">
+         <property name="geometry">
+          <rect>
+           <x>490</x>
+           <y>740</y>
+           <width>111</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Previous2_btn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>600</x>
+           <y>730</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>上一页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="next2_btn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>670</x>
+           <y>730</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>下一页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="determine2_btn">
+         <property name="geometry">
+          <rect>
+           <x>1120</x>
+           <y>740</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>确定</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="page2_led">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>730</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="determine3_btn">
+         <property name="geometry">
+          <rect>
+           <x>860</x>
+           <y>730</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>跳转</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_28">
+         <property name="geometry">
+          <rect>
+           <x>740</x>
+           <y>730</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>页数：</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="course_info_wid">
+        <attribute name="title">
+         <string>课程基本信息</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>911</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>列表</string>
+         </property>
+         <widget class="QPushButton" name="course_query_btn">
+          <property name="geometry">
+           <rect>
+            <x>730</x>
+            <y>50</y>
+            <width>71</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>查询</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>420</x>
+            <y>70</y>
+            <width>72</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>课程名:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Course_num_led">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>70</y>
+            <width>181</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>70</y>
+            <width>72</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>课程号:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="course_name_led">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>70</y>
+            <width>181</width>
+            <height>21</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="category_cob">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>40</y>
+            <width>181</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>40</y>
+            <width>72</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>开课院系:</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="Department_cob">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>40</y>
+            <width>181</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_13">
+          <property name="geometry">
+           <rect>
+            <x>420</x>
+            <y>40</y>
+            <width>72</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>黑体</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>课程类别:</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="course_info_lab">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>720</y>
+           <width>191</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Previous_btn">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>上一页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="next_btn">
+         <property name="geometry">
+          <rect>
+           <x>520</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>下一页</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_17">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>720</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>每页记录数:</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="page_cob">
+         <property name="geometry">
+          <rect>
+           <x>730</x>
+           <y>722</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>10项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>20项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>30项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>40项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>50项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>200项</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>300项</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QPushButton" name="determine_btn">
+         <property name="geometry">
+          <rect>
+           <x>860</x>
+           <y>720</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>确定</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="page_led">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>720</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="firstpage_btn">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>720</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>首页</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="endpage_btn">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>720</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>末页</string>
+         </property>
+        </widget>
+        <widget class="QTableView" name="select_course_viw">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>911</width>
+           <height>561</height>
+          </rect>
+         </property>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Grade_point">
+      <attribute name="title">
+       <string>学分绩点</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>921</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>学分绩点查询</string>
+       </property>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>311</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+border-color: rgb(5, 92, 255);
+border-width: 1px;border-style: solid;</string>
+        </property>
+        <property name="text">
+         <string>截至现在您获得的学分绩点为:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="grade_point_led">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>40</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>921</width>
+         <height>631</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>学期学分绩点明细</string>
+       </property>
+       <widget class="QTableView" name="group_point_view">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>411</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+       <widget class="QLabel" name="loading_lab">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>220</y>
+          <width>411</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>华文行楷</family>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>正在计算绩点中...请稍等.....</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>710</y>
+         <width>921</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>黑体</family>
+        </font>
+       </property>
+       <property name="title">
+        <string>期间学分绩点查询</string>
+       </property>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>101</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>开始学年学期:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="start_cmbox">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>40</y>
+          <width>191</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="end_cmbox">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>40</y>
+          <width>181</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>30</y>
+          <width>101</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>结束学年学期:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>30</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>期间学分绩点值:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="group_point_lne">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>40</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="query_group_point_btn">
+        <property name="geometry">
+         <rect>
+          <x>840</x>
+          <y>30</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="About">
+      <attribute name="title">
+       <string>关于</string>
+      </attribute>
+      <widget class="QGroupBox" name="group_server">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>20</y>
+         <width>411</width>
+         <height>761</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>综合信息服务</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>371</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>聊城大学校历</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>371</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>学生休学办理流程</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>340</y>
+          <width>371</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>学生复学办理流程</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>500</y>
+          <width>371</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>学生退学办理流程</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>650</y>
+          <width>371</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>补办毕业(学位)证明书流程</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_16">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>411</width>
+         <height>761</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>关于</string>
+       </property>
+       <widget class="QLabel" name="label_53">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>381</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>隶书</family>
+          <pointsize>28</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>BY:…-.-*…</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_54">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>381</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>隶书</family>
+          <pointsize>28</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>QQ:1960622196</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_55">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>550</y>
+          <width>381</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>隶书</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>感谢支持</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>change_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>alter_info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>926</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>966</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>plan_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>Training_program()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>790</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>710</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>query_group_point_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>query_fixed_timer_grade_point()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>886</x>
+     <y>809</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>971</x>
+     <y>821</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Previous2_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_firstpage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>653</x>
+     <y>794</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>637</x>
+     <y>884</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>endpage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>return_endpage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>643</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>625</x>
+     <y>898</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>course_query_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>course_query()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>814</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>842</x>
+     <y>-16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>page_cob</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>set_view_page_num()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>792</x>
+     <y>785</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>777</x>
+     <y>903</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scool_year_lwid</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>352</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>query_course_arrange_info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>635</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>683</x>
+     <y>-36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>firstpage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>return_firstpage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>450</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>388</x>
+     <y>904</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>next2_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_endpage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>735</x>
+     <y>794</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>715</x>
+     <y>889</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>next_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_next_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>582</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>569</x>
+     <y>946</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Previous_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_front_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>504</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>889</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>teach_query_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>query_teacher_info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>448</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>-35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>classroom_Campus_cob</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>show_teaching_building(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>353</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>387</x>
+     <y>-129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>teach_next_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_teacher_Next()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>583</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>574</x>
+     <y>-13</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>classroom_endpage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_classroom_curriculum_end()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>624</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>615</x>
+     <y>-129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>curriculum_query_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>query_course_curriculum_info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>410</x>
+     <y>223</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>398</x>
+     <y>-31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>classroom_firstpage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_classroom_curriculum_first()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>442</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>878</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>teach_Previous_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_teacher_Previous()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>501</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>-53</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>teach_firstpage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_teacher_first()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>448</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>889</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>classroom_Teaching_building_cob</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>show_classroom(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>-46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>classroom_next_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_classroom_curriculum_next()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>579</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>911</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Previous_btn_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_classroom_curriculum_Previous()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>489</x>
+     <y>915</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>classroom_query_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>query_classroom_curriculum()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>-25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>teach_endpage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_teacher_end()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>641</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>615</x>
+     <y>873</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Class_Department_cob</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>show_profession_info(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>204</x>
+     <y>-14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Class_query_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>query_class_info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>428</x>
+     <y>223</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>-24</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>curriculum_next_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_course_Next()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>580</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>557</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Class_grade_cob</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>show_class_info(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>310</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>-91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>curriculum_firstpage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_course_first()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>453</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>441</x>
+     <y>-49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Class_Previous_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_class_Previous()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>500</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>863</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Class_next_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_class_Next()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>587</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>549</x>
+     <y>861</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>curriculum_Previous_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_course_Previous()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>-14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>curriculum_endpage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_course_End()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>640</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>727</x>
+     <y>-9</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Class_firstpage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_class_first()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>453</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>864</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Class_endpage_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ret_class_End()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>633</x>
+     <y>784</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>649</x>
+     <y>866</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_School_calendar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>809</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>839</x>
+     <y>-74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_Suspension_Page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>730</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>697</x>
+     <y>-48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_return_to_school()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>585</x>
+     <y>469</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>582</x>
+     <y>-77</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_Drop_out_school()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>660</x>
+     <y>610</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>636</x>
+     <y>-119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_Reissue_degree()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>792</x>
+     <y>756</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>766</x>
+     <y>884</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Planning_course_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_planning_course_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>-88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Program_course_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_program_course_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>349</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>-63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Elective_course_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_elective_course_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>439</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>-62</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>School_elective_course_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_school_elective_course_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>543</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>75</x>
+     <y>895</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>free_choice_course_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_free_choice_course_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>43</x>
+     <y>615</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>44</x>
+     <y>878</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Rehearsal_course_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_rehearsal_course_page()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>696</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>73</x>
+     <y>950</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>alter_info()</slot>
+  <slot>Training_program()</slot>
+  <slot>query_fixed_timer_grade_point()</slot>
+  <slot>course_query()</slot>
+  <slot>return_firstpage()</slot>
+  <slot>return_endpage()</slot>
+  <slot>ret_front_page()</slot>
+  <slot>ret_next_page()</slot>
+  <slot>set_view_page_num()</slot>
+  <slot>query_course_arrange_info()</slot>
+  <slot>ret_firstpage()</slot>
+  <slot>ret_endpage()</slot>
+  <slot>show_teaching_building(int)</slot>
+  <slot>show_classroom(int)</slot>
+  <slot>query_classroom_curriculum()</slot>
+  <slot>ret_classroom_curriculum_Previous()</slot>
+  <slot>ret_classroom_curriculum_next()</slot>
+  <slot>ret_classroom_curriculum_first()</slot>
+  <slot>ret_classroom_curriculum_end()</slot>
+  <slot>query_teacher_info()</slot>
+  <slot>ret_teacher_first()</slot>
+  <slot>ret_teacher_Previous()</slot>
+  <slot>ret_teacher_Next()</slot>
+  <slot>ret_teacher_end()</slot>
+  <slot>query_course_curriculum_info()</slot>
+  <slot>ret_course_first()</slot>
+  <slot>ret_course_Previous()</slot>
+  <slot>ret_course_Next()</slot>
+  <slot>ret_course_End()</slot>
+  <slot>show_profession_info(int)</slot>
+  <slot>show_class_info(int)</slot>
+  <slot>query_class_info()</slot>
+  <slot>ret_class_first()</slot>
+  <slot>ret_class_Previous()</slot>
+  <slot>ret_class_Next()</slot>
+  <slot>ret_class_End()</slot>
+  <slot>show_School_calendar()</slot>
+  <slot>show_Suspension_Page()</slot>
+  <slot>show_return_to_school()</slot>
+  <slot>show_Drop_out_school()</slot>
+  <slot>show_Reissue_degree()</slot>
+  <slot>show_planning_course_page()</slot>
+  <slot>show_program_course_page()</slot>
+  <slot>show_elective_course_page()</slot>
+  <slot>show_school_elective_course_page()</slot>
+  <slot>show_free_choice_course_page()</slot>
+  <slot>show_rehearsal_course_page()</slot>
+ </slots>
+</ui>
